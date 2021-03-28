@@ -7,15 +7,40 @@ body {
     top: 0;
     left: 0;
     overflow: hidden;
+    background-color: #ededed;
+    font-family: "Roboto", sans-serif;
 }
 
 body {
     width: 100vw;
     height: 100vh;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     justify-items: center;
+}
+
+h1 {
+    font-size: 70px;
+    margin: 20px;
+    margin-bottom: 30px;
+}
+
+button {
+    width: 180px;
+    height: 35px;
+    margin-bottom: 1.5em;
+    font-size: 18px;
+    margin-left: 1 0px;
+    margin-right: 10px;
+    outline: none;
+    border: none;
+}
+
+button:hover {
+    background-color: #d6cfcf;
+    border: solid;
 }
 
 #container {
@@ -28,5 +53,6 @@ body {
 }
 
 .grid-item {
+    background-color: white;
     border: solid 1px black;
 }

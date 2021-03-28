@@ -27,6 +27,27 @@ function pickRandomColor() {
     return colorArray[Math.floor(Math.random() * 50)];
 }
 
+const clearButton = document.querySelector('#clear');
+
+clearButton.addEventListener('click', () => {
+    console.log('Yay!');
+    let cells = document.querySelectorAll('.grid-item');
+
+    cells.forEach(cell => {
+        cell.style.backgroundColor = '#FFFFFF';
+    });
+});
+
+const sizeChangeButton = document.querySelector('#change-size');
+
+sizeChangeButton.addEventListener('click', () => {
+    const size = parseInt(prompt('What should be the size of the grid?'));
+
+    container.innerHTML = '';
+
+    makeGrid(size, size);
+});
+
 const colorArray = [
     '#FF6633',
     '#FFB399',
